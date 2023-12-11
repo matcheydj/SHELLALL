@@ -15,6 +15,10 @@
 #define DATE_TIME time(NULL)
 #define PERMISSIONS "permissions"
 #define AVAILABLE_STORAGE "available storage"
+#define DEFAULT_SHELL_EXTRACT_DIR "/path/to/extract/directory" // Directory to extract downloaded shells
+#define EXPECTED_CHECKSUM_FILE "checksums.txt" // Path to file containing expected checksums for downloaded shells
+
+#endif // CONFIG_H
 
 // Function to encrypt a string using SHA3-384
 char* encrypt_string(char *str) {
