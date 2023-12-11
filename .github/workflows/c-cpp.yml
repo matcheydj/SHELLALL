@@ -1,14 +1,14 @@
-name: C/C++ CI
+name: CX/CXX CXXX
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "r" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "r" ]
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
